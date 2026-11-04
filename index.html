@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ms"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Web Wizard · From Idea to Live</title>
+<meta name="description" content="Ruang pembelajaran interaktif untuk peserta bengkel Web Wizard: From Idea to Live. Digital Discovery Series 2026, Unit e-Learning POLIPD.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="./style.css">
+<script src="./script.js" defer></script>
+</head><body>
+
+<header class="sitehead">
+  <a class="brand" href="#utama"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><rect x="1.5" y="1.5" width="37" height="37" rx="6" fill="#163bcf" stroke="#10183b" stroke-width="3"/><circle cx="27" cy="13" r="7" fill="#ffdf35" stroke="#10183b" stroke-width="2.5"/><path d="M6 34a10 10 0 0 1 20 0z" fill="#e33445" stroke="#10183b" stroke-width="2.5"/></svg><span>WEB WIZARD <small>Digital Discovery Series 2026 · Unit e-Learning POLIPD</small></span></a>
+  <nav aria-label="Navigasi utama" id="site-nav">
+    <a href="#utama">Utama</a><a href="#persediaan">Persediaan</a><a href="#kenali">Kenali laman web</a><a href="#praktikal">Studio praktikal</a><a href="#terbit">Penerbitan</a><a href="#kongsi">Perkongsian</a>
+  </nav>
+  <div class="language-switch" aria-label="Bahasa / Language"><button type="button" data-lang="ms" lang="ms" aria-label="Bahasa Melayu">BM</button><button type="button" data-lang="en" lang="en" aria-label="English">EN</button></div>
+</header>
+<main id="home">
+  <section class="hero2 wrapx" aria-labelledby="hero-title">
+    <span class="geo g1" aria-hidden="true"></span><span class="geo g2" aria-hidden="true"></span><span class="geo g3" aria-hidden="true"></span>
+    <div class="hero-media"><img src="./assets/workshop-hero.webp" alt="Meja kerja Digital Discovery dengan laman web pada skrin komputer riba" width="1400" height="788"></div>
+    <div class="hero-card">
+      <p class="mono2 kick">Bengkel 01 · Digital Discovery Series 2026</p>
+      <h1 id="hero-title">Web Wizard<br><span>From Idea to Live</span></h1>
+      <p class="lead">Bina laman web satu halaman dengan bantuan AI. Rancang kandungan, uji reka bentuk dan terbitkan laman pertama anda.</p>
+      <ul class="meta">
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"></rect><path d="M16 2v4M8 2v4M3 10h18"></path></svg>Rabu, 11 Nov 2026</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>9.00 pg – 1.00 tgh</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 7l-7 5 7 5V7z"></path><rect x="1" y="5" width="15" height="14" rx="2"></rect></svg>Google Meet</li>
+      </ul>
+      <div class="facil"><img src="./assets/madam-julie.webp" alt=""><div><small>Fasilitator</small><b>Julie Marlina binti Hasan</b><small>AI Educator · JPA · POLIPD</small></div></div>
+      <div class="row" style="margin-top:20px"><a class="btn blue lg" href="#persediaan">Mula persediaan →</a><a class="btn lg" href="#kenali">Teroka contoh laman</a></div>
+    </div>
+  </section>
+  <section class="mo wrapx" aria-labelledby="mo-title">
+    <div class="mo-head">
+      <div>
+        <p class="eyebrow">Apa yang anda akan bina</p>
+        <h2 id="mo-title" class="mo-h">Satu pagi. <mark class="hl">Satu laman.</mark> Satu pautan.</h2>
+        <p class="lead">Pilih jenis dan gaya, kemudian biar AI bantu menulis kodnya. Tekan mana-mana contoh untuk melihatnya dengan lebih dekat.</p>
+      </div>
+      <div class="mo-pills" aria-label="Perkara yang anda akan pelajari">
+        <span style="--r:-6deg;--d:0s" class="p-blue">Laman web</span>
+        <span style="--r:4deg;--d:.12s" class="p-yellow">Prompt AI</span>
+        <span style="--r:-3deg;--d:.24s" class="p-red">Reka bentuk</span>
+        <span style="--r:7deg;--d:.36s" class="p-green">GitHub Pages</span>
+        <span style="--r:-8deg;--d:.48s" class="p-ink">Netlify</span>
+        <span style="--r:3deg;--d:.6s" class="p-cream">Pautan awam</span>
+      </div>
+    </div>
+    <div class="mo-ring" id="mo-ring" role="region" aria-label="Contoh laman web bergerak"><div class="mo-track" id="mo-track"></div></div>
+    <div class="mo-ring-tools"><button type="button" class="btn sm" id="mo-pause" aria-pressed="false">⏸ Jeda</button><small class="hint">Leret atau tekan kad untuk buka contoh.</small></div>
+  </section>
+  <section class="mo-chat wrapx" aria-labelledby="chat-title">
+    <div class="mo-chat-copy">
+      <p class="eyebrow">Cara bekerja dengan AI</p>
+      <h2 id="chat-title" class="mo-h">Daripada idea ke laman dalam <mark class="hl">tiga mesej</mark></h2>
+      <p class="lead">Anda beri arahan yang jelas. AI tulis kod. Anda semak, minta perubahan dan terbitkan.</p>
+      <button type="button" class="btn sm" id="chat-replay">↺ Main semula</button>
+    </div>
+    <div class="chat" id="chat" aria-live="polite">
+      <p class="chat-label mono2">Contoh perbualan</p>
+      <div class="bub me" style="--i:0"><span class="av">A</span><p><b>Anda</b>Bina laman web satu halaman untuk Bengkel Fotografi Digital saya. Gaya tajuk besar dan kontras.</p></div>
+      <div class="bub ai" style="--i:1"><span class="av">✦</span><p><b>AI</b>Siap! Ini fail <code>index.html</code> anda dengan header, hero, atur cara dan butang daftar.</p></div>
+      <div class="bub me" style="--i:2"><span class="av">A</span><p><b>Anda</b>Tukar butang kepada kuning dan kemaskan paparan di telefon.</p></div>
+      <div class="bub ai" style="--i:3"><span class="av">✦</span><p><b>AI</b>Dah dikemas kini. Simpan fail, buka dalam pelayar dan semak.</p></div>
+      <div class="bub done" style="--i:4"><span>🚀</span><p><b>Diterbitkan</b>bengkel-foto.netlify.app</p></div>
+      <div class="typing" aria-hidden="true"><i></i><i></i><i></i></div>
+    </div>
+  </section>
+  <section class="landing-content wrapx" aria-labelledby="about-title">
+    <p class="eyebrow">Pengenalan</p><h2 id="about-title">Daripada idea kepada pautan awam</h2>
+    <p class="lead">Bengkel ini sesuai untuk peserta yang baru mula membina laman web. Semasa demo, buka bahan yang sama dan cuba setiap aktiviti dengan projek anda sendiri. Gunakan komputer riba atau desktop dan sediakan akses kepada Gemini, GitHub dan Netlify.</p>
+    <div class="home-grid">
+      <article><span class="tabh"><em>01</em>KENALI</span><div class="in"><h3>Kenali laman web</h3><p>Bandingkan tujuan, kandungan dan gaya beberapa jenis laman sebelum memilih idea sendiri.</p><a href="#kenali">Lihat galeri contoh →</a></div></article>
+      <article><span class="tabh"><em>02</em>BINA</span><div class="in"><h3>Studio praktikal</h3><p>Rancang kandungan, jana fail HTML dengan AI dan uji paparan pada skrin telefon.</p><a href="#praktikal">Buka ruang kerja →</a></div></article>
+      <article><span class="tabh"><em>03</em>TERBIT</span><div class="in"><h3>Penerbitan</h3><p>Kenali istilah dan ruang kerja setiap platform, kemudian pilih satu untuk menerbitkan laman.</p><a href="#terbit">Bandingkan platform →</a></div></article>
+    </div>
+    <details class="guide"><summary>Jadual bengkel</summary><ol id="agenda"></ol></details>
+  </section>
+</main>
+<main class="workspace" id="workspace" hidden>
+  <div class="workspace-intro"><figure class="wi-art" id="wi-art" hidden><img id="section-art" alt="" width="1200" height="900"></figure><span class="wi-badge" id="wi-badge" aria-hidden="true"></span><p class="eyebrow" id="section-kicker"></p><h1 id="section-title" tabindex="-1"></h1><p id="section-desc"></p></div>
+  <nav class="section-nav" id="rail" aria-label="Topik dalam bahagian ini"></nav>
+  <section class="panel" id="panel" aria-label="Bahan bengkel"></section>
+</main>
+<footer class="sitefoot"><span><b>Web Wizard: From Idea to Live</b> · Digital Discovery Series 2026</span><span>Anjuran Unit e-Learning, POLIPD · <a href="https://elearning-polipd.github.io/PoliPD-Digital-Discovery-2026/" target="_blank" rel="noopener">Lihat siri ↗</a></span></footer>
+<button class="btn blue help-btn" type="button" id="helpBtn" aria-label="Bantuan teknikal"><span class="hb-ic" aria-hidden="true">?</span><span class="hb-tx">Bantuan teknikal</span></button>
+<dialog id="help" aria-labelledby="help-h">
+  <div class="dh"><b id="help-h">Bantuan bengkel</b><button class="btn sm" type="button" id="helpX">Tutup</button></div>
+  <div class="db">
+    <p style="margin:0 0 10px">Pilih kategori untuk mencari penyelesaian.</p><div class="ftags" id="ftags"></div>
+    <div id="faq"></div>
+    <div class="tip">Jika masalah berterusan, kongsi dalam chat Google Meet. Contoh: <b>[Fail] Laman saya keluar kod mentah</b>. </div>
+  </div>
+</dialog>
+
+
+</body></html>
